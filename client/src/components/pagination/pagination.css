@@ -1,0 +1,38 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination__button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .pagination__button.active,
+  .pagination__button:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination__button.disabled {
+    background-color: #c2c2c2;
+    cursor: default;
+    opacity: 0.5;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.07);
+    }
+  }
+  
